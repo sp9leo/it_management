@@ -6,11 +6,12 @@ def get_data():
     return {
         'fieldname': 'configuration_item',
         'non_standard_fieldnames': {
-            'IT Ticket': 'dynamic_name',
-            'User Account': 'dynamic_name',
+            #'IT Ticket': 'dynamic_name',
+            #'User Account': 'dynamic_name',
             'Issue': 'dynamic_name',
-            'Project': 'dynamic_name',
-            'Task': 'dynamic_name'
+            #'Project': 'dynamic_name',
+            'Task': 'dynamic_name',
+			'IT Backup': 'source_item'
         },
         'transactions': [
             {
@@ -18,12 +19,14 @@ def get_data():
                 'items': ['Software Instance', 'User Account']
             },
             {
-                'label': _('Service'),
-                'items': ['Issue', 'IT Ticket']
+                'label': _('Support'),
+                'items': ['Issue','IT Backup']
             },
             {
                 'label': _('Project'),
-                'items': ['Project', 'Task']
+                'items': [
+                    #'Project', 
+                    'Task']
             }
         ]
     }

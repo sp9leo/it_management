@@ -6,16 +6,20 @@ def get_data():
     return {
         'fieldname': 'user_account',
         'non_standard_fieldnames': {
-            'IT Ticket': 'dynamic_name'
+			'Issue': 'dynamic_name'
         },
         'transactions': [
             {
                 'label': _('Used in'),
-                'items': ['Solution', 'User Account']
+                'items': ['Solution', 'User Account', 'User Group', 'Licence']
             },
             {
                 'label': _('Service'),
-                'items': ['IT Ticket']
+                'items': ['Issue']
+            },
+            {
+                'label': _('Project'),
+                'items': ['Task']
             }
         ]
     }

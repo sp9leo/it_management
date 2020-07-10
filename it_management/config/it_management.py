@@ -36,6 +36,18 @@ def get_data():
                     "name": "Network Jack",
                     "label": _("Network Jack"),
                     "description": _("Network Jack")
+                },
+                {
+                    "type": "doctype",
+                    "name": "IT Hardware",
+                    "label": _("IT Hardware"),
+                    "description": _("IT Hardware")
+                },
+                {
+                    "type": "doctype",
+                    "name": "IT Backup",
+                    "label": _("IT Backup"),
+                    "description": _("IT Backup")
                 }
             ]
         },
@@ -71,6 +83,12 @@ def get_data():
                     "name": "Software Version",
                     "label": _("Software Version"),
                     "description": _("Software Version")
+                },
+                {
+                    "type": "doctype",
+                    "name": "IT Software",
+                    "label": _("IT Software"),
+                    "description": _("IT Software")
                 }
             ]
         },
@@ -129,12 +147,12 @@ def get_data():
         {
             "label": _("Service"),
             "items": [
-                {
-                    "type": "doctype",
-                    "name": "IT Ticket",
-                    "label": _("IT Ticket"),
-                    "description": _("IT Ticket")
-                },
+                # {
+                    # "type": "doctype",
+                    # "name": "IT Ticket",
+                    # "label": _("IT Ticket"),
+                    # "description": _("IT Ticket")
+                # },
                 {
                     "type": "doctype",
                     "name": "IT Service Report",
@@ -146,6 +164,23 @@ def get_data():
                     "name": "Timesheet",
                     "label": _("Timesheet"),
                     "description": _("Timesheet")
+                },
+                {
+                    "type": "doctype",
+                    "name": "IT Checklist",
+                    "label": _("IT Checklist"),
+                    "description": _("IT Checklist")
+                }
+            ]
+        },
+        {
+            "label": _("Settings"),
+            "items": [
+                {
+                    "type": "doctype",
+                    "name": "IT Management Settings",
+                    "label": _("Settings"),
+                    "description": _("IT Management Settings")
                 }
             ]
         }
